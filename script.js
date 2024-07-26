@@ -30,6 +30,7 @@ function addTask(){
 function check(event){
     var store = event.target.parentNode.querySelectorAll("#spy")
 if(flag){
+    
     event.target.src = "images/checked.png"
     store[0].style.textDecoration = "line-through"
     flag = false;
@@ -47,3 +48,4 @@ function toDelete(event){
 function deleteAll(){
     listContainer.innerHTML = "";
 }
+
